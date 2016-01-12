@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container" style="margin-top:60px;">
+  
+  <div class="starter-template">
+    <div class="row vdivide">
+    <div class="col-sm-6 text-center">
+
+    	<div class="form-group">
+		  <form action="/fetch_parmeters/" method="post" class="form-group">
+		   {% csrf_token %}
+		   <fieldset class="form-group">
+		   	 <input type="text" class="form-control" id="url" placeholder="Please Enter url">
+		  </fieldset>
+		  <input class="btn btn-primary" type="submit" value="Next">
+		</form> 
+		</div>
+    </div>
+  </div>
+
+  
+  </div>
+
+</div>
+{% endblock %}

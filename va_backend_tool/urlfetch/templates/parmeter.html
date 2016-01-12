@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container" style="margin-top:60px;">
+  
+  <div class="starter-template">
+    <div class="row vdivide">
+    <div class="col-sm-6 text-center">
+
+    	<div class="form-group">
+		  <form action="/launchva/" method="post" class="form-inline">
+		   {% csrf_token %}
+		    <div class="form-group">
+			    <input type="text" class="form-control" placeholder="Parameter Name" id="pname1">
+			    <input type="text" class="form-control" placeholder="Parameter Value" id="pvalue1">
+			</div>
+			<div class="form-group">
+			    <input type="text" class="form-control" placeholder="Parameter Name" id="pname2">
+			    <input type="text" class="form-control" placeholder="Parameter Value" id="pvalue2">
+			</div>
+			<div class="form-group">
+			    <input type="text" class="form-control" placeholder="Parameter Name" id="pname3">
+			    <input type="text" class="form-control" placeholder="Parameter Value" id="pvalue3">
+			</div>
+			<div class="form-group">
+			    <input type="text" class="form-control" placeholder="Parameter Name" id="pname4">
+			    <input type="text" class="form-control" placeholder="Parameter Value" id="pvalue4">
+			</div>
+		   
+		  <br><br>
+		  <input class="btn btn-primary" type="submit" value="Next">
+		</form> 
+		</div>
+    </div>
+  </div>
+
+  
+  </div>
+
+</div>
+{% endblock %}
+
+
